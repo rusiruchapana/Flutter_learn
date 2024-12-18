@@ -18,9 +18,16 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text(
-        "Rusiru chapana",
-        textAlign: TextAlign.center,
+      child: Container(
+        color: Colors.limeAccent,
+        alignment: Alignment.center,
+        width: 200,
+        height: 100,
+        child: const Text(
+          "Rusiru chapana jayampathi",
+          style: TextStyle(fontSize: 18, color: Colors.blueAccent),
+          textAlign: TextAlign.center,
+        ),
       ),
     );
   }
