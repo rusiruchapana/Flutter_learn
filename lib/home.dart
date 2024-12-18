@@ -1,3 +1,4 @@
+import 'package:cofee_card/cofee_preferences.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -7,30 +8,23 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Center(child: Text("Title")),
+          title: const Center(child: Text("My Cofee ID")),
           backgroundColor: Colors.amberAccent,
         ),
         body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Container(
-              child: Center(child: const Text("text1")),
-              width: 50,
-              height: 100,
-              color: Colors.redAccent,
+              child: Text("How I like my Cofee..."),
+              color: Colors.brown[200],
+              padding: EdgeInsets.all(10),
+              height: 50,
             ),
             Container(
-              child: Center(child: const Text("text2")),
-              width: 75,
-              height: 100,
-              color: Colors.yellowAccent,
-            ),
-            Container(
-              child: Center(child: const Text("text3")),
-              width: 100,
-              height: 100,
-              color: Colors.blueAccent,
+              child: CofeePreferences(),
+              color: Colors.brown[50],
+              padding: EdgeInsets.all(10),
+              height: 85,
             ),
           ],
         ));
