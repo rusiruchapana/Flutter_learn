@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 class CofeePreferences extends StatelessWidget {
@@ -7,21 +5,33 @@ class CofeePreferences extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       children: [
         Row(
           children: [
-            Text("Strength:"),
-            SizedBox(width: 10),
-            Text("3"),
+            const Text("Strength:"),
+            const SizedBox(width: 10),
+            const Text("3"),
+            const SizedBox(width: 20),
+            Image.asset(
+              "assets/images/cofee2.png",
+              width: 25,
+              height: 25,
+            )
           ],
         ),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
         Row(
           children: [
-            Text("Sugar:"),
-            SizedBox(width: 10),
-            Text("3"),
+            const Text("Sugar:"),
+            const SizedBox(width: 10),
+            const Text("3"),
+            const SizedBox(width: 20),
+            Image.asset(
+              "assets/images/sugar2.png",
+              width: 25,
+              height: 25,
+            )
           ],
         ),
       ],
