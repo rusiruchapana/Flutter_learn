@@ -26,6 +26,14 @@ class Home extends StatelessWidget {
               padding: EdgeInsets.all(10),
               height: 85,
             ),
+            Expanded(
+              child: Image.asset(
+                "assets/images/cofee_bg.png",
+                fit: BoxFit
+                    .cover, // Ensures the image covers the remaining space
+                alignment: Alignment.center,
+              ),
+            ),
           ],
         ));
   }

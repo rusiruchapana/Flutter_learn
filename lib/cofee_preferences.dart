@@ -17,7 +17,13 @@ class CofeePreferences extends StatelessWidget {
               "assets/images/cofee2.png",
               width: 25,
               height: 25,
-            )
+            ),
+            const Expanded(
+              child: Align(
+                alignment: Alignment.centerRight, // Right-aligns the "+" text
+                child: Text("+"),
+              ),
+            ),
           ],
         ),
         const SizedBox(height: 10),
@@ -31,7 +37,13 @@ class CofeePreferences extends StatelessWidget {
               "assets/images/sugar2.png",
               width: 25,
               height: 25,
-            )
+            ),
+            const Expanded(
+              child: Align(
+                alignment: Alignment.centerRight, // Right-aligns the "+" text
+                child: Text("+"),
+              ),
+            ),
           ],
         ),
       ],
